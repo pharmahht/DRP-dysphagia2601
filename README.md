@@ -1,9 +1,9 @@
 # Pharmacist Clinical Training Simulator 💊
 
 ## Case Study: Drug-related Dysphagia & Esophageal Risk
-## This learning material design: Professor. 陳崇鈺 Research Team (Huu-Hiep Tran)
+## This learning material was designed by: Professor. 陳崇鈺 Research Team (Huu-Hiep Tran)
 ### 📋 Overview
-This interactive web-based simulator is designed for pharmacy students to practice identifying **Drug-Related Problems (DRPs)** and providing patient counseling. 
+This interactive web-based simulator is designed for pharmacy students to practice identifying **Drug-Related Problems (DRPs)** and providing patient counselling. 
 
 The case focuses on:
 - **Ms. Nguyen (56yo):** Presenting with drug-induced gingival overgrowth.
@@ -20,4 +20,4 @@ After completing this simulator, students will be able to:
 ---
 ## License ⚖️
 Licensed under **CC BY-NC-SA 4.0**. 
-See the [LICENSE](LICENSE) file for more details.
+
