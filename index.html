@@ -463,6 +463,7 @@
             <h1 id="scenario-title">Pharmacist Clinical Training Simulator</h1>
             <div class="subtitle">Drug-related gingival enlargement and safe medication counseling</div>
             <div class="subline">Teaching case for pharmacy training</div>
+            <div class="subline">Learning material design: Professor. 陳崇鈺 Research Team (Huu-Hiep Tran)</div>
           </div>
         </div>
         <div class="progress-badge">
@@ -528,7 +529,7 @@
 
         <details class="card" open>
           <summary>
-            <span>💊 Medication History with Dates</span>
+            <span>💊 History Medications</span>
             <span>▾</span>
           </summary>
           <div class="detail-content">
@@ -578,24 +579,6 @@
                   <td>-</td>
                   <td>No self-discontinuation of medication</td>
                 </tr>
-                <tr>
-                  <td>About 3 months later</td>
-                  <td>Gum condition improved</td>
-                  <td>-</td>
-                  <td>After oral care reinforcement and medical review</td>
-                </tr>
-                <tr>
-                  <td>Later follow-up visit</td>
-                  <td>Alendronate</td>
-                  <td>Newly prescribed</td>
-                  <td>For osteoporosis</td>
-                </tr>
-                <tr>
-                  <td>Later follow-up visit</td>
-                  <td>Calcium supplement</td>
-                  <td>Newly prescribed</td>
-                  <td>Do not take together with alendronate</td>
-                </tr>
               </tbody>
             </table>
           </div>
@@ -607,6 +590,9 @@
             <span>▾</span>
           </summary>
           <div class="detail-content">
+            <div class="text-block" style="margin-bottom:10px;">
+              <p><span class="section-title">Measurement date:</span> At dental / pharmacy assessment visit (Scene 1)</p>
+            </div>
             <div class="mini-cards">
               <div class="mini-card"><div class="k">Blood Pressure</div><div class="v">134/84</div></div>
               <div class="mini-card"><div class="k">Heart Rate</div><div class="v">86</div></div>
@@ -629,8 +615,119 @@
         </details>
 
         <details class="card" open>
+  <summary>
+    <span>🧪 Lab Values</span>
+    <span>▾</span>
+  </summary>
+  <div class="detail-content">
+    <table>
+      <thead>
+        <tr>
+          <th>Test</th>
+          <th>Result (2025/11/15)</th>
+          <th>Reference Range</th>
+          <th>Interpretation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>WBC (×10³/µL)</td>
+          <td>7.4</td>
+          <td>4 – 10</td>
+          <td>Within normal range</td>
+        </tr>
+        <tr>
+          <td>NEU (%)</td>
+          <td>67.3</td>
+          <td>45 – 75</td>
+          <td>Within normal range</td>
+        </tr>
+        <tr>
+          <td>LYM (%)</td>
+          <td>20.9</td>
+          <td>20 – 35</td>
+          <td>Within normal range</td>
+        </tr>
+        <tr>
+          <td>MONO (%)</td>
+          <td>9.3</td>
+          <td>4 – 10</td>
+          <td>Within normal range</td>
+        </tr>
+        <tr>
+          <td>EOS (%)</td>
+          <td>1.6</td>
+          <td>1 – 8</td>
+          <td>Within normal range</td>
+        </tr>
+        <tr>
+          <td>BASO (%)</td>
+          <td>0.9</td>
+          <td>0 – 2</td>
+          <td>Within normal range</td>
+        </tr>
+        <tr>
+          <td>Hemoglobin (g/dL)</td>
+          <td class="abnormal">11.3</td>
+          <td>12 – 16</td>
+          <td class="abnormal">Low</td>
+        </tr>
+        <tr>
+          <td>Platelet (×10³/µL)</td>
+          <td>260</td>
+          <td>150 – 400</td>
+          <td>Within normal range</td>
+        </tr>
+        <tr>
+          <td>Fasting glucose (mmol/L)</td>
+          <td class="abnormal">5.9</td>
+          <td>3.9 – 5.6</td>
+          <td class="abnormal">High</td>
+        </tr>
+        <tr>
+          <td>HbA1c (%)</td>
+          <td class="abnormal">6.4</td>
+          <td>4.0 – 6.0</td>
+          <td class="abnormal">High</td>
+        </tr>
+        <tr>
+          <td>Total cholesterol (mmol/L)</td>
+          <td>4.8</td>
+          <td>3.9 – 5.2</td>
+          <td>Within normal range</td>
+        </tr>
+        <tr>
+          <td>LDL-C (mmol/L)</td>
+          <td>3.1</td>
+          <td>&lt; 3.4</td>
+          <td>Within normal range</td>
+        </tr>
+        <tr>
+          <td>HDL-C (mmol/L)</td>
+          <td>1.3</td>
+          <td>&gt; 0.9</td>
+          <td>Within normal range</td>
+        </tr>
+        <tr>
+          <td>Triglyceride (mmol/L)</td>
+          <td>1.6</td>
+          <td>0.4 – 1.9</td>
+          <td>Within normal range</td>
+        </tr>
+        <tr>
+          <td>CRP (mg/dL)</td>
+          <td class="abnormal">8.8</td>
+          <td>&lt; 1.0</td>
+          <td class="abnormal">High</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</details>
+
+        <details class="card hidden" id="overview-card">
           <summary>
-            <span>🔬 Clinical Findings / Key Assessment Data</span>
+            <span>🔬 Overview of Key Assessment Data</span>
             <span>▾</span>
           </summary>
           <div class="detail-content">
@@ -1238,6 +1335,7 @@ Because she had a history of esophagitis and sometimes felt that tablets became 
     }
 
     function showCompletion(){
+      document.getElementById("overview-card")?.classList.remove("hidden");
       hideAllInteractive();
       const box = document.getElementById("dialogue-box");
       box.classList.remove("hidden");
@@ -1275,6 +1373,7 @@ Because she had a history of esophagitis and sometimes felt that tablets became 
       state.stageCompleted = new Set();
       state.scene2Unlocked = false;
       state.activeMode = "dialogue";
+      document.getElementById("overview-card")?.classList.add("hidden");
       document.getElementById("dialogue-box").innerHTML = `
         <div class="speaker-row">
           <div class="speaker-avatar" id="speaker-avatar"></div>
